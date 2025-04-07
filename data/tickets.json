@@ -1,0 +1,86 @@
+[
+    {
+        "user": "jgigrec",
+        "movie": "The Shawshank Redemption",
+        "rating": "9.3",
+        "year": "1994",
+        "seat": "D7",
+        "time": "17:30",
+        "date": "2025-04-03",
+        "expires": "2025-04-04",
+        "price": 93,
+        "id": "41dd7d71-26e9-4c22-93d1-60545325bf22"
+    },
+    {
+        "user": "Guest",
+        "movie": "The Dark Knight",
+        "rating": "9.1",
+        "year": "2008",
+        "seat": "E8",
+        "time": "15:00",
+        "date": "2025-04-03",
+        "expires": "2025-04-04",
+        "price": 91,
+        "id": "fa4c1f8a-a979-4d52-8f0d-50fef85de8b0"
+    },
+    {
+        "user": "Guest",
+        "movie": "The Dark Knight",
+        "rating": "9.1",
+        "year": "2008",
+        "seat": "E8",
+        "time": "15:00",
+        "date": "2025-04-03",
+        "expires": "2025-04-04",
+        "price": 91,
+        "id": "05e8893c-e636-4407-a4c0-0bd70846307b"
+    },
+    {
+        "user": "jdjfdj",
+        "movie": "The Dark Knight",
+        "rating": "9.1",
+        "year": "2008",
+        "seat": "E4",
+        "time": "17:30",
+        "date": "2025-04-03",
+        "expires": "2025-04-04",
+        "price": 91,
+        "id": "bc374c99-d882-49d0-9209-1fe266466af8"
+    },
+    {
+        "user": "jdjfdj",
+        "movie": "The Dark Knight",
+        "rating": "9.1",
+        "year": "2008",
+        "seat": "E4",
+        "time": "17:30",
+        "date": "2025-04-03",
+        "expires": "2025-04-04",
+        "price": 91,
+        "id": "4f42ea54-2281-44fa-904e-61f9abf2a99f"
+    },
+    {
+        "user": "Guest",
+        "movie": "12 Angry Men",
+        "rating": "9.0",
+        "year": "1957",
+        "seat": "D5",
+        "time": "17:30",
+        "date": "2025-04-03",
+        "expires": "2025-04-04",
+        "price": 90,
+        "id": "abbc7bce-736b-4516-a1b3-8c88afc3b8fd"
+    },
+    {
+        "user": "Guest",
+        "movie": "The Godfather: Part II",
+        "rating": "9.0",
+        "year": "1974",
+        "seat": "E7",
+        "time": "15:00",
+        "date": "2025-04-03",
+        "expires": "2025-04-04",
+        "price": 90,
+        "id": "0988d8c6-e4db-4690-bcd5-5d34dac0ad08"
+    }
+]
