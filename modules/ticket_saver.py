@@ -69,7 +69,7 @@ def generate_ticket_pdf(ticket):
     c.setFont("Helvetica", 12)
     line_spacing = 22
     lines = [
-        f"👤 Name: {ticket['id']}",
+        f"👤 Ticket ID: {ticket['id']}",
         f"👤 Name: {ticket['user']}",
         f"🎬 Movie: {ticket['movie']}",
         f"⭐ Rating: {ticket['rating']}    📅 Year: {ticket['year']}",

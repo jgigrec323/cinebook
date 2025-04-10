@@ -166,5 +166,53 @@
         "expires": "2025-04-08",
         "price": 91,
         "id": "afab1c11-ba24-4a8f-b39a-105a795a127b"
+    },
+    {
+        "user": "Guest",
+        "movie": "12 Angry Men",
+        "rating": "9.0",
+        "year": "1957",
+        "seat": "C6",
+        "time": "17:30",
+        "date": "2025-04-07",
+        "expires": "2025-04-08",
+        "price": 90,
+        "id": "61ce1bb4-b048-4543-90b0-c46156656502"
+    },
+    {
+        "user": "Guest",
+        "movie": "The Lord of the Rings: The Two Towers",
+        "rating": "8.7",
+        "year": "2002",
+        "seat": "B4",
+        "time": "17:30",
+        "date": "2025-04-08",
+        "expires": "2025-04-09",
+        "price": 87,
+        "id": "ee988191-7f35-4c39-b4c3-aba8b8fc8878"
+    },
+    {
+        "user": "Guest",
+        "movie": "The Shawshank Redemption",
+        "rating": "9.3",
+        "year": "1994",
+        "seat": "C4",
+        "time": "",
+        "date": "2025-04-10",
+        "expires": "2025-04-11",
+        "price": 93,
+        "id": "d5f5c640-030b-4ecd-8a5d-87ce823cc7db"
+    },
+    {
+        "user": "Guest",
+        "movie": "The Shawshank Redemption",
+        "rating": "9.3",
+        "year": "1994",
+        "seat": "C4",
+        "time": "17:30",
+        "date": "2025-04-10",
+        "expires": "2025-04-11",
+        "price": 93,
+        "id": "b068c09a-f7b2-40e2-93a4-b9ecc4e35766"
     }
 ]
