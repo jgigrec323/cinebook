@@ -1,5 +1,6 @@
 import tkinter as tk
 from datetime import datetime, timedelta
+from tkinter import messagebox
 from modules.ticket_saver import save_ticket, ask_to_save_user
 
 def start_booking_flow(root, movie, current_user, ask_login=False):
@@ -36,19 +37,31 @@ def start_booking_flow(root, movie, current_user, ask_login=False):
 
     # === TIME SLOT SELECTION ===
     tk.Label(booking, text="Choose Time", fg="white", bg="#1f1f1f", font=("Helvetica", 12)).pack(pady=10)
-    for t in ["15:00", "17:30", "20:00"]:
-        tk.Radiobutton(booking, text=t, variable=selected_time, value=t, bg="#1f1f1f", fg="white").pack(anchor="w", padx=50)
+    time_frame = tk.Frame(booking, bg="#1f1f1f")
+    time_frame.pack()
+
+    time_options = ["13:00", "15:00", "17:30", "20:00", "22:15"]
+    for t in time_options:
+        tk.Radiobutton(time_frame, text=t, variable=selected_time, value=t, bg="#1f1f1f", fg="white").pack(side="left", padx=10)
 
     # === CONFIRMATION ===
     def confirm():
+        name = user_name.get().strip()
+        seat = selected_seat.get()
+        time = selected_time.get()
+
+        if not name or not seat or not time:
+            messagebox.showwarning("Missing Information", "Please fill in all the required fields: Name, Seat, and Time.")
+            return
+
         now = datetime.now()
         ticket_info = {
-            "user": user_name.get(),
+            "user": name,
             "movie": movie["Title"],
             "rating": movie.get("imdbRating", "N/A"),
             "year": movie.get("Year", "N/A"),
-            "seat": selected_seat.get(),
-            "time": selected_time.get(),
+            "seat": seat,
+            "time": time,
             "date": now.strftime("%Y-%m-%d"),
             "expires": (now + timedelta(days=1)).strftime("%Y-%m-%d"),
             "price": round(float(movie.get("imdbRating", 5)) * 10)
@@ -57,7 +70,7 @@ def start_booking_flow(root, movie, current_user, ask_login=False):
         save_ticket(ticket_info)
 
         if ask_login:
-            ask_to_save_user(user_name.get())
+            ask_to_save_user(name)
 
         booking.destroy()
 

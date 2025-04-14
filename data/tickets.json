@@ -214,5 +214,17 @@
         "expires": "2025-04-11",
         "price": 93,
         "id": "b068c09a-f7b2-40e2-93a4-b9ecc4e35766"
+    },
+    {
+        "user": "Jean",
+        "movie": "Parasite",
+        "rating": "8.5",
+        "year": "2019",
+        "seat": "B4",
+        "time": "20:00",
+        "date": "2025-04-10",
+        "expires": "2025-04-11",
+        "price": 85,
+        "id": "3455bfa6-9b0e-4e8c-bdec-e3c68c1b362d"
     }
 ]
